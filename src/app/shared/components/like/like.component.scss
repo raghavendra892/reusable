@@ -1,0 +1,14 @@
+i{
+    color: #ccc;
+    cursor: pointer;
+
+    &.liked{
+        color: red;
+    }
+}
+
+.test-btn:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    
+    }

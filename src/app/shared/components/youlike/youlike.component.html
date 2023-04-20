@@ -1,0 +1,7 @@
+<i class="fa-solid fa-thumbs-up fa-2x mr-3" [ngClass]="{
+    'liked' : isLikedY
+}" (click)="onLikeY()"></i>
+
+
+<!-- [ngClass]="{'disliked' : !isLikedY}"  -->
+<i class="fa-solid fa-thumbs-down fa-2x mr-3" [ngClass]="{'disliked' : !isLikedY}" (click)="onDislikeY()"></i>

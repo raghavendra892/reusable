@@ -1,0 +1,40 @@
+<!-- 
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let reelY of reelsY">
+      <div class="card mb-4">
+        <div class="card-header">
+          {{reelY.titleY}}
+        </div>
+        <div class="card-body">
+          <app-youlike [isLikedY]="reelY.isLikeY"
+          (emmitLikeStatusY)="getLikestatusY($event, reelY.idY)"></app-youlike>
+          <span>{{reelY.likecountY}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<hr>
+<hr>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let reel of reels">
+      <div class="card mb-4">
+        <div class="card-header">
+          <span class="ml-3">{{reel.title}}</span>
+        </div>
+        <div class="card-body">
+          <p>
+            
+            <app-like [isLiked]="reel.isLike"
+            (emmitLikeStatus)="getLikestatus($event, reel.id)"
+            ></app-like> <span class="ml-3">{{reel.likeCount}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
